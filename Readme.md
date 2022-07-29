@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Кирилл](https://up.htmlacademy.ru/adaptive/26/user/2089763).
-* Наставник: `Неизвестно`.
+* Студент: [Кирилл Гомыров](https://up.htmlacademy.ru/adaptive/26/user/2089763).
+* Наставник: `Никита Сигов` https://htmlacademy.ru/profile/crazer.
 
 ---
 
