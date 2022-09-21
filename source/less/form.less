@@ -1,0 +1,56 @@
+.form {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 82px;
+    }
+  }
+
+  &__button {
+    padding: 0;
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    min-height: 40px;
+    background-color: rgba(104, 183, 56, 1);
+    align-self: stretch;
+    margin-bottom: 21px;
+
+    @media (min-width: 768px) {
+      width: 282px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 1440px) {
+      width: 568px;
+    }
+  }
+
+  &__required {
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Arial", "Helvetica", sans-serif;
+
+    @media (min-width: 768px) {
+      margin-left: 61px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-left: 77px;
+    }
+  }
+}

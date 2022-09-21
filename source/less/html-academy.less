@@ -1,0 +1,44 @@
+.html-academy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo-text {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    color: rgba(68, 68, 68, 1);
+    transition: all 0.3s;
+  }
+
+  &__logo-text:hover,
+  &__logo-text:hover + &__logo-image > &__logo-icon {
+    color: #68b738;
+  }
+
+  &__logo-text:active,
+  &__logo-text:active + &__logo-image > &__logo-icon {
+    opacity: 0.3;
+  }
+
+  &__logo-image {
+    @media (min-width: 768px) {
+      margin-left: 22px;
+    }
+  }
+
+  &__logo-icon {
+    display: block;
+    color: #666666;
+    transition: all 0.3s;
+  }
+
+  &__logo-icon:hover {
+    color: #68b738;
+  }
+
+  &__logo-icon:active {
+    opacity: 0.3;
+  }
+}

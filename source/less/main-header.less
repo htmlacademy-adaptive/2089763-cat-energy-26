@@ -1,0 +1,77 @@
+.main-header {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 65px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__logo-image {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__logo-text {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__toggle {
+    position: relative;
+    border: none;
+    padding: 0;
+    background-color: #ffffff;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    &--closed::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: #000000;
+      box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000;
+    }
+
+    &--opened::before,
+    &--opened::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: #000000;
+    }
+
+    &--opened::before {
+      transform: rotate(45deg);
+    }
+
+    &--opened::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
