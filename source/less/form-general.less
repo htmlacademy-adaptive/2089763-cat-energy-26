@@ -1,0 +1,139 @@
+.form-general {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    margin-bottom: 69px;
+  }
+
+  &__basic-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: 768px) {
+      margin-bottom: 72px;
+      padding-bottom: 0;
+      border: none;
+    }
+
+    @media (min-width: 1440px) {
+      width: 568px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__basic-item {
+    display: flex;
+    align-items: center;
+
+    & + & {
+      margin-top: 13px;
+    }
+  }
+
+  &__basic-name {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(68, 68, 68, 1);
+  }
+
+  &__basic-field {
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    min-height: 46px;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+    border: 1px solid #e7e7e7;
+    margin-left: 13px;
+    flex-grow: 1;
+    padding-left: 15px;
+
+    &:hover {
+      border-color: #cdcdcd;
+    }
+
+    &:focus {
+      border-color: #444444;
+    }
+
+    &:invalid {
+      border-color: #ff8282;
+    }
+  }
+
+  &__target-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 22.22px;
+    padding-bottom: 19.38px;
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: 768px) {
+      border: 1px solid #e7e7e7;
+      padding-left: 28px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-left: 80px;
+      flex-grow: 1;
+    }
+  }
+
+  &__target-item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  &__target-container {
+    position: relative;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+  }
+
+  &__input[type="radio"]:checked + &__target-mark::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 15px;
+    height: 15px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  &__target-mark {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  &__target-name {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    @media (min-height: 768px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+// Viewport
+
+// @mobile-width: 320px;
+// @mobile-width-only: 767px;
+// @table-width: 768px;
+// @desktop-width: 1440px;
+
+// Wrappers
+
+// .mobile-wrapper() {
+//   width: @mobile-width - 40;
+//   padding: 0 20px;
+// }
+
+// .tablet-wrapper() {
+//   width: @table-width - 60;
+//   padding: 0 30px;
+// }
+
+// .desktop-wrapper() {
+//   width: @desktop-width - 220;
+//   padding: 0 110px;
+// }
+
+.page {
+  height: 100%;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

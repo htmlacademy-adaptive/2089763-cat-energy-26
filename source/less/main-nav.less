@@ -1,0 +1,157 @@
+.main-nav {
+
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      width: 708px;
+      padding: 0 30px;
+      min-height: 100px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1220px;
+      padding: 0 110px;
+      min-height: 165px;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      text-decoration: none;
+    }
+  }
+
+  &__logo-image {
+    transition: 0.3s;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    @media (min-width: 1440px) {
+      width: 202px;
+      height: 59px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    text-align: center;
+
+    &:first-child {
+      border-top: 1px solid rgba(230, 230, 230, 1);
+
+      @media (min-width: 768px) {
+        border: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      border: none;
+    }
+
+    & + & {
+      @media (min-width: 768px) {
+        margin-left: 36px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    transition: all 0.3s;
+    position: relative;
+
+    &--current::before {
+      @media (min-width: 768px) {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #68b738;
+        bottom: 6px;
+        left: 0;
+        right: 0;
+      }
+
+      @media (min-width: 1440px) {
+        background-color: #ffffff;
+      }
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 20px;
+      color: #ffffff;
+    }
+
+    &--catalog,
+    &--form {
+      @media (min-width: 1440px) {
+        color: #111111;
+      }
+
+      &::before,
+      &::before {
+        background-color: #68b738;
+      }
+    }
+  }
+}
